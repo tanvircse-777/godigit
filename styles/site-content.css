@@ -1,0 +1,82 @@
+.myhero {
+  margin-top: 61px;
+  height: 400px;
+  background-image: url("../assets/images/home-page-virat-banner-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroheading {
+}
+.myherowrap {
+  width: 50%;
+  margin: auto;
+}
+.circlediv {
+  text-align: center;
+}
+.circledivs {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.circleitem {
+  background-image: url("https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/health.svg");
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.health {
+}
+
+.viewpricediv {
+  border: 1px solid rgb(168, 168, 168);
+}
+
+.mobnumber {
+  border-left: 1px solid rgb(168, 168, 168);
+}
+
+.viewpricecommon {
+  padding: 10px;
+  background-color: white;
+  height: 100%;
+}
+.pin {
+  border-right: 1px solid rgb(168, 168, 168);
+}
+.addmember {
+  border-right: 1px solid rgb(168, 168, 168);
+}
+.mobnumber {
+  border-right: 1px solid rgb(168, 168, 168);
+}
+
+.price {
+  height: 82px;
+  justify-content: center;
+  text-align: center;
+}
+.myinput {
+  border: none;
+}
+.viewpricebutton {
+  background-color: orange;
+  height: 47px;
+  width: 110px;
+  margin-top: auto;
+  font-weight: 900;
+  margin-top: 8px;
+}
+.policybutton {
+  background-color: white;
+  height: 40px;
+  width: 50%;
+  font-weight: 600;
+  color: orange;
+  border-radius: 20px;
+}
