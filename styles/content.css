@@ -1,0 +1,388 @@
+.myhero {
+  margin-top: 61px;
+  padding-bottom: 160px;
+  height: 100%;
+  background-image: url("../assets/images/home-page-virat-banner-1.svg");
+  background-size: 112%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.alternatehero {
+  margin-top: 60px;
+  display: none;
+  border-radius: 5px;
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: 1px 1px 1px 1px #c8c8c8;
+}
+.alternateheroleft {
+  padding: 30px;
+}
+.heroheading p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.heroheading h2 {
+  font-weight: 600;
+  font-size: 40px;
+  padding-top: 40px;
+}
+.myherowrap {
+  width: 60%;
+  margin: auto;
+}
+
+.myherowrap h2 {
+  color: black;
+}
+.circlediv {
+  text-align: center;
+}
+.circledivs {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.circleitem {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.health {
+  background-image: url("../assets/images/health.svg");
+  border: 2px solid orange;
+}
+
+.car {
+  background-image: url("../assets/images/car-side-view.svg");
+}
+.bike {
+  background-image: url("../assets/images/motorcycle-side-view.svg");
+}
+.travel {
+  background-image: url("../assets/images/Autorikshaw.svg");
+}
+.commercial {
+  background-image: url("../assets/images/travel-airplane.svg");
+}
+.morepr {
+  background-image: url("../assets/images/more-icon.svg");
+}
+.viewprice {
+  margin-bottom: 20px;
+}
+.viewpricediv {
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+}
+
+.mobnumber {
+  border-left: 1px solid rgb(168, 168, 168);
+}
+
+.viewpricecommon {
+  padding: 10px;
+  background-color: white;
+  height: 100%;
+}
+.pin {
+  border-right: 1px solid rgb(168, 168, 168);
+}
+.addmember {
+}
+.mobnumber {
+  border-right: 1px solid rgb(168, 168, 168);
+}
+
+.price {
+  height: 82px;
+  justify-content: center;
+  text-align: center;
+}
+.myinput {
+  border: none;
+}
+.viewpricebutton {
+  background-color: orange;
+  height: 47px;
+  width: 110px;
+  margin-top: auto;
+  font-weight: 900;
+  margin-top: 8px;
+}
+.policybutton {
+  background-color: white;
+  height: 40px;
+  width: 50%;
+  font-weight: 600;
+  color: orange;
+  border-radius: 20px;
+  position: relative;
+  left: 0;
+}
+.term button:hover {
+  color: orange !important;
+}
+
+.termandcondition {
+  text-align: right;
+}
+
+.myprotectwrap {
+  width: 70%;
+  margin: auto;
+}
+.mainprotect {
+  margin-top: 50px;
+}
+.protectnaming {
+  background-color: #f5f5f5;
+  border-radius: 35px;
+  width: 147px;
+  padding: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.protectitems {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.protectitem {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 20px;
+  width: 33%;
+  height: 33%;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.protectitem:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.05);
+  border: 1px solid orange;
+  color: orange;
+  transition-duration: 0.2s;
+}
+.whychoseus {
+  margin-top: 80px;
+}
+.whychoseuswrap {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.choseuscomponents {
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+.choseuscomponent {
+  text-align: center;
+}
+
+.choseuscomponent h3 {
+  font-weight: 600;
+}
+
+.choseuscomponent p {
+  font-size: 16px;
+  color: rgb(75, 75, 75);
+  font-weight: normal;
+}
+
+.choseuscomponent a {
+  color: orange;
+  font-weight: 600;
+}
+
+.secondaryfooterwrap {
+  width: 95%;
+  margin: auto;
+}
+.secondaryfooterwrap h5 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+}
+.digit {
+  text-align: center;
+  justify-content: center;
+}
+.digitlinks {
+  list-style-type: none;
+}
+
+.digitlinks li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.digitlinks a {
+  color: black;
+}
+
+.secondaryfootericons {
+  display: flex;
+  justify-content: space-around;
+  width: 52%;
+  margin: 20px auto 0;
+}
+.secondaryfootericon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgb(200, 200, 200);
+}
+.secondaryfootericon i {
+  margin-top: 7px !important;
+}
+
+.secondaryfooterul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.secondaryfooterul a {
+  color: #595959;
+}
+
+.secondaryfooterul li {
+  margin: 3px 0 8px -40px;
+}
+
+.left {
+  border-right: 1px solid #d6d6d6;
+}
+.right {
+  padding-left: 30px;
+}
+
+.getourapp {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.getourappwrap {
+  width: 50%;
+  margin: auto;
+}
+
+.app div {
+  justify-content: center;
+  margin: auto;
+}
+.headingapp {
+  padding: 20px;
+}
+
+.handpic img {
+  height: 68px;
+  width: 181px;
+}
+
+.appslogo img {
+  margin-top: 17px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+.footerwrap {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.footerwrap p {
+  font-size: 11px;
+  color: grey;
+}
+.footerlist {
+  list-style-type: none;
+}
+.footerlist li {
+  font-size: 13px;
+  display: inline-block;
+  padding: 0px 15px;
+  border-right: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.footerlist a {
+  color: white;
+}
+
+.importanlinkswrap {
+  width: 70%;
+  margin: auto;
+}
+
+.linklistcol ul {
+  list-style-type: none;
+}
+
+.linklistcol li {
+  margin-bottom: 15px;
+  clear: left;
+  margin-left: 0;
+  padding: 0;
+}
+
+.linklistcol a {
+  color: black;
+}
+
+.apps div {
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 975px) {
+  .circledivs {
+    margin: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .circledivs {
+    overflow: auto;
+  }
+  .protectitems {
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .termandcondition {
+    text-align: center !important;
+    margin: auto;
+  }
+  .policybutton {
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 1580px) {
+  .policybutton {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .myhero {
+    display: none;
+  }
+  .alternatehero {
+    display: block;
+  }
+}

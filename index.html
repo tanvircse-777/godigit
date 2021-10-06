@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--------------------------------meta data------------------------------------>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Bootstrap Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -11,7 +13,6 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
-
     <!-- Bootstrap Optional theme -->
     <link
       rel="stylesheet"
@@ -19,849 +20,813 @@
       integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
       crossorigin="anonymous"
     />
+    
     <!--font awesome-->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="styles/index.css" type="text/css" />
-    <link rel="stylesheet" href="styles/site-content.css" type="text/css" />
+    <!------------------------------local css--------------------------------------->
+    <link rel="stylesheet" href="styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="styles/content.css" type="text/css" />
+    <link rel="stylesheet" href="styles/accordion.css" type="text/css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class='container-fluid'>
+
+    <!--------------------------------------header----------------------------------->
+
       <header>
-    <div class="header-top">
-        <div class="container nav-wrap">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header navbar-header--flex">
-            <div class="menu-logo-wrap">
-              
-              <span class="bar-icon">
-                <span class="hamburger-inner">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </span>
-              </span>
-    
-                <a class="navbar-brand" href="https://www.godigit.com">
-                  <img class="navbar-brand__logo" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="Digit"/>
-                </a>
-              
-              
-            </div>
-            <div class="phone-link-wrapper">
-              
-                <div class="lang-switch">
-                  <span class="lang-bg active"></span>
-                  <span class="lang-list lang-list--hindi">
-                      <a class="lang-link lang-link-hindi" href="/">हिंदी</a>
-                    </span>
-                  <span class="lang-list lang-list--english">
-                      <a class="lang-link lang-link-english" href="/">English</a>
-                    </span>
-                </div>
-              
-              <!--<sly data-sly-test = "false">
-                <span class="phone-link phone-link--header">
-                  <a class="phone-link__text" href="tel:1800-258-4242">
-                    <i><img class="telephone-icon-mobile" alt="phone" src="/content/dam/godigit/images/icons/icon-phone.svg"></i>
-                  </a>
-                </span>
-                </sly>
-                <sly data-sly-test = "false">
-                <span class="phone-link phone-link--header">
-                  <a class="phone-link__text" href="tel:08061248509">
-                    <i><img class="telephone-icon-mobile" alt="phone" src="https://www.godigit.com/content/dam/godigit/images/icons/icon-phone.svg"></i>
-                  </a>
-                </span>
-                </sly>
-                <sly data-sly-test = "true">-->
-              <!--  <span class="phone-link phone-link--header" data-sly-test = "true">
-                  <a class="phone-link__text" href="mailto:hello@godigit.com">
-                    <i><img class="telephone-icon-mobile" alt="mail" src="/content/dam/godigit/images/icons/icon-mail.svg"></i> -->
-              <span class="phone-link phone-link--header">
-                  <a id="support-menu-link" class="phone-link__text" hrefd="mailto:hello@godigit.com" href="javascript:void(0);">
-                    <i><img class="telephone-icon-mobile" alt="mail" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/support.svg"/></i>
-                  </a>
-                </span>
-              <!--</sly>-->
-            </div>
-          </div>
-    
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="navbar-collapse navbar-collapse-menu" id="nav-menu">
-            <!-- Start: Header Content -->
-            <div class="navbar-collpase__header">
-              <div class="close-icon-menu">
-                <span class="icon-close"></span>
-              </div>
-              <div class="navbar-collpase__img">
-                <img class="navbar-brand__logo" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="Digit"/>
-              </div>
-              <div class="navbar-collpase__content">
-                <span class="phone-link"><img class="telephone-icon-mobile" alt="mail" src="/content/dam/godigit/images/icons/icon-mail.svg"/></span>
-                <div class="navbar-collpase-phone">
-                  <div>24x7</div>
-                  <a href="mailto: hello@godigit.com">hello@godigit.com</a>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Start: Nav Links Desktop -->
-    
-            
-              <ul class="nav navbar-nav mb-0 hidden-xs navbar-nav-left">
-                <li class="nav__list nav__list--products">
-                  <a href="#" class="nav__link">Products<i class="nav__down-arrow-icon fa fa-chevron-down"> </i>
-                  </a>
-    
-                  <div class="navbar-dropdown-inner1">
-                    <div class="header-container">
-                      <div class="header-products">
-                        <div class="header-products__items">
-                          <div class="header-products__items-image-section">
-                            <div class="img-container">
-                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg" alt="Car"/>
-                            </div>
-                            <p class="product-name">Motor</p>
-                          </div>
-                          <div class="sub-products-container">
-                            <ul class="sub-products-container-list">
-                              <li>
-                                <a href="https://www.godigit.com/motor-insurance/car-insurance">Car Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/motor-insurance/two-wheeler-insurance">Two Wheeler/Bike Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance">Commercial Vehicle Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/taxi-insurance">Taxi/Cab Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance">Auto Rickshaw Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/truck-insurance">Truck Insurance</a>
-                              </li>
-    
-                            </ul>
-                          </div>
-                        </div>
-    <div class="header-products__items">
-                          <div class="header-products__items-image-section">
-                            <div class="img-container">
-                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/health.svg" alt="Health"/>
-                            </div>
-                            <p class="product-name">Health</p>
-                          </div>
-                          <div class="sub-products-container">
-                            <ul class="sub-products-container-list">
-                              <li>
-                                <a href="https://www.godigit.com/health-insurance">Health Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/health-insurance/super-top-up-health-insurance">Super Top-up Health Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/health-insurance/opd-cover">OPD Health Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/health-insurance/arogya-sanjeevani-policy">Arogya Sanjeevani Policy</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/health-insurance/personal-accident-insurance">Personal Accident Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/health-insurance/group-medical-health-insurance">Corporate Health Insurance</a>
-                              </li>
-    
-                            </ul>
-                          </div>
-                        </div>
-    <div class="header-products__items">
-                          <div class="header-products__items-image-section">
-                            <div class="img-container">
-                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/documentation.svg" alt="Other"/>
-                            </div>
-                            <p class="product-name">Other</p>
-                          </div>
-                          <div class="sub-products-container">
-                            <ul class="sub-products-container-list">
-                              <li>
-                                <a href="https://www.godigit.com/international-travel-insurance">International Travel Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/domestic-travel-insurance/flight-delay">Flight Delay</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/property-insurance/shop-insurance">Shop Insurance</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/property-insurance/home-insurance">Home Insurance</a>
-                              </li>
-    
-                            </ul>
-                          </div>
-                        </div>
-    
-    
-    
-                        
-    
-    
-                      </div>
-                    </div>
-                </li>
-    
-                <li class="nav__list nav__list--claims">
-                  <a href="#" class="nav__link nav__link--claims">Claims<i class="nav__down-arrow-icon fa fa-chevron-down"> </i>
-                  </a>
-    
-                  <div class="navbar-dropdown-inner1">
-                    <div class="header-container header-container-claims">
-                      <div class="header-products">
-                        <div class="header-products__items">
-                          <div class="header-products__items-image-section">
-                            <div class="img-container">
-                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/img/Claims.svg"/>
-                            </div>
-                            <p class="product-name"></p>
-                          </div>
-                          <div class="sub-products-container">
-                            <ul class="sub-products-container-list">
-                              <li>
-                                <a href="https://www.godigit.com/claims">File a Claim</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/health-insurance/file-a-claim">File Health Claim</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/motor-claims">File Motor Claim for Garages</a>
-                              </li>
-    <li>
-                                <a href="https://www.godigit.com/covid-19-assistance">COVID-19 Assistance</a>
-                              </li>
-    <li>
-                                <a href="https://api.whatsapp.com/send?phone=917026061234&text=Hi">Claim Status</a>
-                              </li>
-    
-                            </ul>
-                          </div>
-                        </div>
-    
-    
-    
-                        <!-- <div data-sly-test = "" class="award-container">
-                          <div>
-                            <p class="award-title"></p>
-                            <div class="award-container__img-container hide-mobile-image">
-                              <img src=""
-                                alt="">
-                            </div>
-                          </div>
-                        </div> -->
-    
-    
-                      </div>
-                    </div>
-                </li>
-    
+        <div class="header-top">
+          <div class="container nav-wrap">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header navbar-header--flex">
+              <div class="menu-logo-wrap">
                 
-                  <li class="nav__list  ">
-                    <a href="https://www.godigit.com/login" class="nav__link ">Renewals</a>
-                  </li>
-                  
-    
-              
-                  <li class="nav__list  ">
-                    <a href="https://www.godigit.com/become-an-agent" class="nav__link ">Become an Agent</a>
-                  </li>
-                  
-    
-              </ul>
-    
-    
-    
-    
-    
-    
-              <!-- Start: Nav Links Mobile -->
-    
-              <ul class="nav navbar-nav visible-xs">
-                <li class="nav__list">
-                  <a href="#" class="nav__link">Products<i class="nav__down-arrow-icon icon-chevron-down"> </i></a>
-    
-                  <div class="navbar-dropdown-inner">
-                    <ul class="nav" id="nav-menu-wrap">
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/car-insurance">
-                            <span>Car Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/two-wheeler-insurance">
-                            <span>Two Wheeler/Bike Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance">
-                            <span>Commercial Vehicle Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/taxi-insurance">
-                            <span>Taxi/Cab Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance">
-                            <span>Auto Rickshaw Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/truck-insurance">
-                            <span>Truck Insurance</span>
-                          </a>
-                        </li>
-                      
-                    
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance">
-                            <span>Health Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/super-top-up-health-insurance">
-                            <span>Super Top-up Health Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/opd-cover">
-                            <span>OPD Health Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/arogya-sanjeevani-policy">
-                            <span>Arogya Sanjeevani Policy</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/personal-accident-insurance">
-                            <span>Personal Accident Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/group-medical-health-insurance">
-                            <span>Corporate Health Insurance</span>
-                          </a>
-                        </li>
-                      
-                    
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/international-travel-insurance">
-                            <span>International Travel Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/domestic-travel-insurance/flight-delay">
-                            <span>Flight Delay</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/property-insurance/shop-insurance">
-                            <span>Shop Insurance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/property-insurance/home-insurance">
-                            <span>Home Insurance</span>
-                          </a>
-                        </li>
-                      
-                    </ul>
-                  </div>
-                </li>
-    
-                <li class="nav__list">
-                  <a href="#" class="nav__link">Claims<i class="nav__down-arrow-icon icon-chevron-down"> </i></a>
-    
-                  <div class="navbar-dropdown-inner">
-                    <ul class="nav" id="nav-menu-wrap">
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/claims">
-                            <span>File a Claim</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/file-a-claim">
-                            <span>File Health Claim</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-claims">
-                            <span>File Motor Claim for Garages</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://www.godigit.com/covid-19-assistance">
-                            <span>COVID-19 Assistance</span>
-                          </a>
-                        </li>
-                      
-                        <li class="nav__list">
-                          <a class="nav__link nav__link--light" href="https://api.whatsapp.com/send?phone=917026061234&text=Hi">
-                            <span>Claim Status</span>
-                          </a>
-                        </li>
-                      
-                    </ul>
-                  </div>
-                </li>
-    
+                <span class="bar-icon">
+                  <span class="hamburger-inner">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </span>
+                </span>
+      
+                  <a class="navbar-brand" href="https://www.godigit.com">
+                    <img class="navbar-brand__logo" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="Digit"/>
+                  </a>
                 
-                  <li class="nav__list  ">
-                    <a href="https://www.godigit.com/login" class="nav__link ">Renewals</a>
-                  </li>
-                  
-              
-                  <li class="nav__list  ">
-                    <a href="https://www.godigit.com/become-an-agent" class="nav__link ">Become an Agent</a>
-                  </li>
-                  
-              </ul>
-            
-    
-            <!-- Start: Desktop: Menu -->
-            <ul class="nav hidden-xs navbar-nav navbar-right navbar-right-flex  navbar-right-flex-menu ">
-    
-              
-                <li class="nav__list">
-                  <div class="lang-switch hide-mobile-content">
+              </div>
+              <div class="phone-link-wrapper">
+                
+                  <div class="lang-switch">
                     <span class="lang-bg active"></span>
                     <span class="lang-list lang-list--hindi">
-                    <a class="lang-link lang-link-hindi" href="/">हिंदी</a>
-    
-                  </span>
+                        <a class="lang-link lang-link-hindi" href="/">हिंदी</a>
+                      </span>
                     <span class="lang-list lang-list--english">
-                    <a class="lang-link lang-link-english" href="/">English</a>
-                  </span>
+                        <a class="lang-link lang-link-english" href="/">English</a>
+                      </span>
                   </div>
-                </li>
-              
-              <li class="hidden-xs" style="margin-right: 0">
-                <div class="sign-in-wrap">
-                  
-                  <span class="sign-in-text">Support<i class="icon-chevron-down"></i></span>
-    
-                  <div class="sign-in-dropdown">
-                    <a href="https://www.godigit.com/login" class="sign-in-link">Sign In</a>
-                    <div class="policy-menu-wrap policy-menu-wrap-dw">
-                      <ul class="policy-menu">
-                        <li class="policy-menu__list">
-                          <a href="https://www.godigit.com/login" target="_blank" class="policy-menu__link">
-                            <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/edit-policy.svg" alt="Renew Digit Policy"/>
-                            <span>Edit Policy</span>
-                          </a>
-                        </li>
-    <li class="policy-menu__list">
-                          <a href="https://www.godigit.com/download-policy" target="_blank" class="policy-menu__link">
-                            <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/download-policy.svg" alt="Download Policy"/>
-                            <span>Download Policy</span>
-                          </a>
-                        </li>
-    <li class="policy-menu__list">
-                          <a href="https://www.godigit.com/login?requests=true" target="_blank" class="policy-menu__link">
-                            <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/service-requests.svg"/>
-                            <span>My Service Requests</span>
-                          </a>
-                        </li>
-    
-                      </ul>
-                    </div>
-                    <div class="need-help-text-wrap">
-                      <div class="need-help-text"></div>
-                       
-                            <a href="tel:18001034448" target="_blank" class="contact-mail">
-                              <img src="/content/dam/godigit/directportal/en/call.svg" alt="Helpline Number"/>
-                              1800 103 4448
-                            </a>
-    <a href="https://api.whatsapp.com/send?l=en&text=Hi&phone=917026061234" target="_blank" class="contact-mail">
-                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/whatsapp.svg" alt="70260 61234"/>
-                              70260 61234
-                            </a>
-    <a href="mailto:hello@godigit.com" target="_blank" class="contact-mail">
-                              <img src="https://www.godigit.com/content/dam/godigit/directportal/en/header-icons/mail.svg" alt="hello@godigit.com"/>
-                              hello@godigit.com
-                            </a>
-    
-                        
-                    </div>
-                    <p style="margin:10px 20px;font-size:1.4rem;"> Our WhatsApp number cannot be used for calls. This is a chat only number. </p>
+                <span class="phone-link phone-link--header">
+                    <a id="support-menu-link" class="phone-link__text" hrefd="mailto:hello@godigit.com" href="javascript:void(0);">
+                      <i><img class="telephone-icon-mobile" alt="mail" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/support.svg"/></i>
+                    </a>
+                  </span>
+              </div>
+            </div>
+      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse navbar-collapse-menu" id="nav-menu">
+              <!-- Start: Header Content -->
+              <div class="navbar-collpase__header">
+                <div class="close-icon-menu">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="navbar-collpase__img">
+                  <img class="navbar-brand__logo" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="Digit"/>
+                </div>
+                <div class="navbar-collpase__content">
+                  <span class="phone-link"><img class="telephone-icon-mobile" alt="mail" src="/content/dam/godigit/images/icons/icon-mail.svg"/></span>
+                  <div class="navbar-collpase-phone">
+                    <div>24x7</div>
+                    <a href="mailto: hello@godigit.com">hello@godigit.com</a>
                   </div>
                 </div>
-              </li>
-    
-              <li class="nav__list nav__list--login" style="display:none;">
-                <span class="avatar"> </span>
-                <a class="nav__link nav__link--login" href="#">login</a>
-              </li>
-            </ul>
-            
-              <!-- Start: Company Links -->
-              <ul class="nav navbar-nav nav--company">
-                <li class="nav__list">
-                  <a href="https://www.godigit.com/about" class="nav__link">about</a>
+              </div>
+      
+              <!-- Start: Nav Links Desktop -->
+      
+                <ul class="nav navbar-nav mb-0 hidden-xs navbar-nav-left">
+                  <li class="nav__list nav__list--products">
+                    <a href="#" class="nav__link">Products<i class="nav__down-arrow-icon fa fa-chevron-down"> </i>
+                    </a>
+                    <div class="navbar-dropdown-inner1">
+                      <div class="header-container">
+                        <div class="header-products">
+                          <div class="header-products__items">
+                            <div class="header-products__items-image-section">
+                              <div class="img-container">
+                                <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg" alt="Car"/>
+                              </div>
+                              <p class="product-name">Motor</p>
+                            </div>
+                            <div class="sub-products-container">
+                              <ul class="sub-products-container-list">
+                                <li>
+                                  <a href="https://www.godigit.com/motor-insurance/car-insurance">Car Insurance</a>
+                                </li>
+                                  <li>
+                                  <a href="https://www.godigit.com/motor-insurance/two-wheeler-insurance">Two Wheeler/Bike Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance">Commercial Vehicle Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/taxi-insurance">Taxi/Cab Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance">Auto Rickshaw Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/truck-insurance">Truck Insurance</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="header-products__items">
+                            <div class="header-products__items-image-section">
+                              <div class="img-container">
+                                <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/health.svg" alt="Health"/>
+                              </div>
+                              <p class="product-name">Health</p>
+                            </div>
+                            <div class="sub-products-container">
+                              <ul class="sub-products-container-list">
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance">Health Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance/super-top-up-health-insurance">Super Top-up Health Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance/opd-cover">OPD Health Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance/arogya-sanjeevani-policy">Arogya Sanjeevani Policy</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance/personal-accident-insurance">Personal Accident Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance/group-medical-health-insurance">Corporate Health Insurance</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="header-products__items">
+                            <div class="header-products__items-image-section">
+                              <div class="img-container">
+                                <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/documentation.svg" alt="Other"/>
+                              </div>
+                              <p class="product-name">Other</p>
+                            </div>
+                            <div class="sub-products-container">
+                              <ul class="sub-products-container-list">
+                                <li>
+                                  <a href="https://www.godigit.com/international-travel-insurance">International Travel Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/domestic-travel-insurance/flight-delay">Flight Delay</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/property-insurance/shop-insurance">Shop Insurance</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/property-insurance/home-insurance">Home Insurance</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="nav__list nav__list--claims">
+                    <a href="#" class="nav__link nav__link--claims">Claims<i class="nav__down-arrow-icon fa fa-chevron-down"> </i>
+                    </a>
+                    <div class="navbar-dropdown-inner1">
+                      <div class="header-container header-container-claims">
+                        <div class="header-products">
+                          <div class="header-products__items">
+                            <div class="header-products__items-image-section">
+                              <div class="img-container">
+                                <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/img/Claims.svg"/>
+                              </div>
+                              <p class="product-name"></p>
+                            </div>
+                            <div class="sub-products-container">
+                              <ul class="sub-products-container-list">
+                                <li>
+                                  <a href="https://www.godigit.com/claims">File a Claim</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/health-insurance/file-a-claim">File Health Claim</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/motor-claims">File Motor Claim for Garages</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.godigit.com/covid-19-assistance">COVID-19 Assistance</a>
+                                </li>
+                                <li>
+                                  <a href="https://api.whatsapp.com/send?phone=917026061234&text=Hi">Claim Status</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                    <li class="nav__list  ">
+                      <a href="https://www.godigit.com/login" class="nav__link ">Renewals</a>
+                    </li>
+                    <li class="nav__list  ">
+                      <a href="https://www.godigit.com/become-an-agent" class="nav__link ">Become an Agent</a>
+                    </li>
+                </ul>
+      
+                <!-- Start: Nav Links Mobile -->
+      
+                <ul class="nav navbar-nav visible-xs">
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Products<i class="nav__down-arrow-icon icon-chevron-down"> </i></a>     
+                    <div class="navbar-dropdown-inner">
+                      <ul class="nav" id="nav-menu-wrap">
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/car-insurance">
+                              <span>Car Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/two-wheeler-insurance">
+                              <span>Two Wheeler/Bike Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance">
+                              <span>Commercial Vehicle Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/taxi-insurance">
+                              <span>Taxi/Cab Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance">
+                              <span>Auto Rickshaw Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/truck-insurance">
+                              <span>Truck Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance">
+                              <span>Health Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/super-top-up-health-insurance">
+                              <span>Super Top-up Health Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/opd-cover">
+                              <span>OPD Health Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/arogya-sanjeevani-policy">
+                              <span>Arogya Sanjeevani Policy</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/personal-accident-insurance">
+                              <span>Personal Accident Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/group-medical-health-insurance">
+                              <span>Corporate Health Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/international-travel-insurance">
+                              <span>International Travel Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/domestic-travel-insurance/flight-delay">
+                              <span>Flight Delay</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/property-insurance/shop-insurance">
+                              <span>Shop Insurance</span>
+                            </a>
+                          </li>
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/property-insurance/home-insurance">
+                              <span>Home Insurance</span>
+                            </a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+      
+                  <li class="nav__list">
+                    <a href="#" class="nav__link">Claims<i class="nav__down-arrow-icon icon-chevron-down"> </i></a>
+      
+                    <div class="navbar-dropdown-inner">
+                      <ul class="nav" id="nav-menu-wrap">
+                        
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/claims">
+                              <span>File a Claim</span>
+                            </a>
+                          </li>
+                        
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/health-insurance/file-a-claim">
+                              <span>File Health Claim</span>
+                            </a>
+                          </li>
+                        
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/motor-claims">
+                              <span>File Motor Claim for Garages</span>
+                            </a>
+                          </li>
+                        
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://www.godigit.com/covid-19-assistance">
+                              <span>COVID-19 Assistance</span>
+                            </a>
+                          </li>
+                        
+                          <li class="nav__list">
+                            <a class="nav__link nav__link--light" href="https://api.whatsapp.com/send?phone=917026061234&text=Hi">
+                              <span>Claim Status</span>
+                            </a>
+                          </li>
+                        
+                      </ul>
+                    </div>
+                  </li>
+      
+                  
+                    <li class="nav__list  ">
+                      <a href="https://www.godigit.com/login" class="nav__link ">Renewals</a>
+                    </li>
+                    
+                
+                    <li class="nav__list  ">
+                      <a href="https://www.godigit.com/become-an-agent" class="nav__link ">Become an Agent</a>
+                    </li>
+                    
+                </ul>
+              
+      
+              <!-- Start: Desktop: Menu -->
+              <ul class="nav hidden-xs navbar-nav navbar-right navbar-right-flex  navbar-right-flex-menu ">
+      
+                
+                  <li class="nav__list">
+                    <div class="lang-switch hide-mobile-content">
+                      <span class="lang-bg active"></span>
+                      <span class="lang-list lang-list--hindi">
+                      <a class="lang-link lang-link-hindi" href="/">हिंदी</a>
+      
+                    </span>
+                      <span class="lang-list lang-list--english">
+                      <a class="lang-link lang-link-english" href="/">English</a>
+                    </span>
+                    </div>
+                  </li>
+                
+                <li class="hidden-xs" style="margin-right: 0">
+                  <div class="sign-in-wrap">
+                    
+                    <span class="sign-in-text">Support<i class="icon-chevron-down"></i></span>
+      
+                    <div class="sign-in-dropdown">
+                      <a href="https://www.godigit.com/login" class="sign-in-link">Sign In</a>
+                      <div class="policy-menu-wrap policy-menu-wrap-dw">
+                        <ul class="policy-menu">
+                          <li class="policy-menu__list">
+                            <a href="https://www.godigit.com/login" target="_blank" class="policy-menu__link">
+                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/edit-policy.svg" alt="Renew Digit Policy"/>
+                              <span>Edit Policy</span>
+                            </a>
+                          </li>
+                           <li class="policy-menu__list">
+                            <a href="https://www.godigit.com/download-policy" target="_blank" class="policy-menu__link">
+                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/download-policy.svg" alt="Download Policy"/>
+                              <span>Download Policy</span>
+                            </a>
+                          </li>
+                          <li class="policy-menu__list">
+                            <a href="https://www.godigit.com/login?requests=true" target="_blank" class="policy-menu__link">
+                              <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/service-requests.svg"/>
+                              <span>My Service Requests</span>
+                            </a>
+                          </li>
+      
+                        </ul>
+                      </div>
+                      <div class="need-help-text-wrap">
+                        <div class="need-help-text"></div>
+                              <a href="tel:18001034448" target="_blank" class="contact-mail">
+                                <img src="/content/dam/godigit/directportal/en/call.svg" alt="Helpline Number"/>
+                                1800 103 4448
+                              </a>
+                              <a href="https://api.whatsapp.com/send?l=en&text=Hi&phone=917026061234" target="_blank" class="contact-mail">
+                                <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/whatsapp.svg" alt="70260 61234"/>
+                                70260 61234
+                              </a>
+                              <a href="mailto:hello@godigit.com" target="_blank" class="contact-mail">
+                                <img src="https://www.godigit.com/content/dam/godigit/directportal/en/header-icons/mail.svg" alt="hello@godigit.com"/>
+                                hello@godigit.com
+                              </a>
+                      </div>
+                      <p style="margin:10px 20px;font-size:1.4rem;"> Our WhatsApp number cannot be used for calls. This is a chat only number. </p>
+                    </div>
+                  </div>
                 </li>
-                <li class="nav__list">
-                  <a href="https://www.godigit.com/contact" class="nav__link">contact</a>
-                </li>
-                <li class="nav__list">
-                  <a href="https://www.godigit.com/careers" class="nav__link">careers</a>
+      
+                <li class="nav__list nav__list--login" style="display:none;">
+                  <span class="avatar"> </span>
+                  <a class="nav__link nav__link--login" href="#">login</a>
                 </li>
               </ul>
-            
+              
+                <!-- Start: Company Links -->
+                <ul class="nav navbar-nav nav--company">
+                  <li class="nav__list">
+                    <a href="https://www.godigit.com/about" class="nav__link">about</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="https://www.godigit.com/contact" class="nav__link">contact</a>
+                  </li>
+                  <li class="nav__list">
+                    <a href="https://www.godigit.com/careers" class="nav__link">careers</a>
+                  </li>
+                </ul>
+              
+            </div>
+            <!-- Start: Backdrop Overlay -->
+            <div class="backdrop-overlay"></div>
+            <!-- /.navbar-collapse -->
           </div>
-          <!-- Start: Backdrop Overlay -->
-          <div class="backdrop-overlay"></div>
-          <!-- /.navbar-collapse -->
         </div>
-      </div>
-      
-        <div class="header-bottom">
-          <div class="container">
-            <div class="">
-              <div class="clearfix nav-bottom">
-              <span class="bar-icon">
-                <span class="hamburger-inner">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
+        
+          <div class="header-bottom">
+            <div class="container">
+              <div class="">
+                <div class="clearfix nav-bottom">
+                <span class="bar-icon">
+                  <span class="hamburger-inner">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </span>
                 </span>
-              </span>
-                <a class="navbar-brand" href="#">
-                  <img class="navbar-brand__logo" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="Digit"/>
-                </a>
-                <div class="nav-bottom-btn">
-                  <button type="submit" class="btn btn2 btn-primary renew-btn renew-btn--header" role="button">Get Quote</button>
-    
-                  <!--<a href="https://api.whatsapp.com/send?l=en&text=Hello,%20I%20am%20interested%20in%20getting%20insurance%20for%20my%20Commercial%20Vehicle.%20Please%20contact%20me%20on%20this%20number.&phone=917026002400"
-                    data-sly-test="false" class="btn btn2 btn-primary" role="button"> <span
-                      class="whatsapp-logo"> <svg class="whatsapp-logo__img" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px"
-                        height="512px" viewBox="0 0 90 90" style="enable-background: new 0 0 90 90;" xml:space="preserve">
-                        <g>
-                          <path id="WhatsApp"
-                            d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"
-                            fill="#FFFFFF"></path>
-                        </g>
-                      </svg>
-                    </span> 70 2600 2400
-                  </a>-->
+                  <a class="navbar-brand" href="#">
+                    <img class="navbar-brand__logo" src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="Digit"/>
+                  </a>
+                  <div class="nav-bottom-btn">
+                    <button type="submit" class="btn btn2 btn-primary renew-btn renew-btn--header" role="button">Get Quote</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-    
-    
-    
-        <div class="modal more-products" id="more-products" tabindex="-1" role="dialog">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">More Products</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <i class="icon-close cursor-pointer" aria-hidden="true"></i>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="header-products">
-                  <div class="header-products__items">
-                    <div class="header-products__items-image-section">
-                      <div class="img-container">
-                        <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg" alt="Car"/>
-                      </div>
-                      <p class="product-name">Motor</p>
-                    </div>
-                    <div class="sub-products-container">
-                      <ul class="sub-products-container-list">
-                        <li>
-                          <a href="https://www.godigit.com/motor-insurance/car-insurance">Car Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/motor-insurance/two-wheeler-insurance">Two Wheeler/Bike Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance">Commercial Vehicle Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/taxi-insurance">Taxi/Cab Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance">Auto Rickshaw Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/truck-insurance">Truck Insurance</a>
-                        </li>
-    
-                      </ul>
-                    </div>
-                  </div>
-    <div class="header-products__items">
-                    <div class="header-products__items-image-section">
-                      <div class="img-container">
-                        <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/health.svg" alt="Health"/>
-                      </div>
-                      <p class="product-name">Health</p>
-                    </div>
-                    <div class="sub-products-container">
-                      <ul class="sub-products-container-list">
-                        <li>
-                          <a href="https://www.godigit.com/health-insurance">Health Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/health-insurance/super-top-up-health-insurance">Super Top-up Health Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/health-insurance/opd-cover">OPD Health Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/health-insurance/arogya-sanjeevani-policy">Arogya Sanjeevani Policy</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/health-insurance/personal-accident-insurance">Personal Accident Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/health-insurance/group-medical-health-insurance">Corporate Health Insurance</a>
-                        </li>
-    
-                      </ul>
-                    </div>
-                  </div>
-    <div class="header-products__items">
-                    <div class="header-products__items-image-section">
-                      <div class="img-container">
-                        <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/documentation.svg" alt="Other"/>
-                      </div>
-                      <p class="product-name">Other</p>
-                    </div>
-                    <div class="sub-products-container">
-                      <ul class="sub-products-container-list">
-                        <li>
-                          <a href="https://www.godigit.com/international-travel-insurance">International Travel Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/domestic-travel-insurance/flight-delay">Flight Delay</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/property-insurance/shop-insurance">Shop Insurance</a>
-                        </li>
-    <li>
-                          <a href="https://www.godigit.com/property-insurance/home-insurance">Home Insurance</a>
-                        </li>
-    
-                      </ul>
-                    </div>
-                  </div>
-    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       
-      <div class="sign-in-overlay"></div>
-      <!-- START : SIGN IN WRAP FOR MOBILE -->
-      <div class="mobile-sign-in-wrap">
-        <!--      <img data-sly-test="" src="" alt="" class="sign-in-user-img">-->
-        <!--      <span data-sly-test="Support" class="sign-in-text">Support<i class="icon-chevron-down"></i></span>-->
-    
-        <div class="mobile-sign-in">
-          <h4 class="support-heading">Support</h4>
-          <i class="material-icons close-mobile-sign-in">close</i>
-          <!--        <a data-sly-test="Sign In" href="https://www.godigit.com/login" class="sign-in-link">Sign In</a>-->
-          <div class="policy-menu-wrap policy-menu-wrap-dw">
-            <ul class="policy-menu">
-              <li class="policy-menu__list">
-                <a href="https://www.godigit.com/login" target="_blank" class="policy-menu__link">
-                  <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/edit-policy.svg" alt="Renew Digit Policy"/>
-                  <span>Edit Policy</span>
-                </a>
-              </li>
-    <li class="policy-menu__list">
-                <a href="https://www.godigit.com/download-policy" target="_blank" class="policy-menu__link">
-                  <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/download-policy.svg" alt="Download Policy"/>
-                  <span>Download Policy</span>
-                </a>
-              </li>
-    <li class="policy-menu__list">
-                <a href="https://www.godigit.com/login?requests=true" target="_blank" class="policy-menu__link">
-                  <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/service-requests.svg"/>
-                  <span>My Service Requests</span>
-                </a>
-              </li>
-    
-            </ul>
+      
+      
+          <div class="modal more-products" id="more-products" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">More Products</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close cursor-pointer" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="header-products">
+                    <div class="header-products__items">
+                      <div class="header-products__items-image-section">
+                        <div class="img-container">
+                          <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg" alt="Car"/>
+                        </div>
+                        <p class="product-name">Motor</p>
+                      </div>
+                      <div class="sub-products-container">
+                        <ul class="sub-products-container-list">
+                          <li>
+                            <a href="https://www.godigit.com/motor-insurance/car-insurance">Car Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/motor-insurance/two-wheeler-insurance">Two Wheeler/Bike Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance">Commercial Vehicle Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/taxi-insurance">Taxi/Cab Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/auto-rickshaw-insurance">Auto Rickshaw Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/motor-insurance/commercial-vehicle-insurance/truck-insurance">Truck Insurance</a>
+                          </li>
+      
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="header-products__items">
+                      <div class="header-products__items-image-section">
+                        <div class="img-container">
+                          <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/health.svg" alt="Health"/>
+                        </div>
+                        <p class="product-name">Health</p>
+                      </div>
+                      <div class="sub-products-container">
+                        <ul class="sub-products-container-list">
+                          <li>
+                            <a href="https://www.godigit.com/health-insurance">Health Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/health-insurance/super-top-up-health-insurance">Super Top-up Health Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/health-insurance/opd-cover">OPD Health Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/health-insurance/arogya-sanjeevani-policy">Arogya Sanjeevani Policy</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/health-insurance/personal-accident-insurance">Personal Accident Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/health-insurance/group-medical-health-insurance">Corporate Health Insurance</a>
+                          </li>
+      
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="header-products__items">
+                      <div class="header-products__items-image-section">
+                        <div class="img-container">
+                          <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/documentation.svg" alt="Other"/>
+                        </div>
+                        <p class="product-name">Other</p>
+                      </div>
+                      <div class="sub-products-container">
+                        <ul class="sub-products-container-list">
+                          <li>
+                            <a href="https://www.godigit.com/international-travel-insurance">International Travel Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/domestic-travel-insurance/flight-delay">Flight Delay</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/property-insurance/shop-insurance">Shop Insurance</a>
+                          </li>
+                          <li>
+                            <a href="https://www.godigit.com/property-insurance/home-insurance">Home Insurance</a>
+                          </li>
+      
+                        </ul>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="need-help-text-wrap">
-            <div class="need-help-text"></div>
-            
-                <a href="tel:18001034448" target="_blank" class="contact-mail">
-                  <img src="/content/dam/godigit/directportal/en/call.svg" alt="Helpline Number"/>
-                  1800 103 4448
-                </a>
-    <a href="https://api.whatsapp.com/send?l=en&text=Hi&phone=917026061234" target="_blank" class="contact-mail">
-                  <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/whatsapp.svg" alt="70260 61234"/>
-                  70260 61234
-                </a>
-    <a href="mailto:hello@godigit.com" target="_blank" class="contact-mail">
-                  <img src="https://www.godigit.com/content/dam/godigit/directportal/en/header-icons/mail.svg" alt="hello@godigit.com"/>
-                  hello@godigit.com
-                </a>
-    
-            
-            <!-- </sly>
-             <sly data-sly-test = "false">
-                 <a href="tel:08061248509" class="contact-mail">
-                   <img src="https://www.godigit.com/content/dam/godigit/images/icons/icon-phone.svg" alt="Phone Icon">
-                   08061248509
-                 </a>
-             </sly>-->
+        
+        <div class="sign-in-overlay"></div>
+        <!-- START : SIGN IN WRAP FOR MOBILE -->
+        <div class="mobile-sign-in-wrap">
+          <!--      <img data-sly-test="" src="" alt="" class="sign-in-user-img">-->
+          <!--      <span data-sly-test="Support" class="sign-in-text">Support<i class="icon-chevron-down"></i></span>-->
+      
+          <div class="mobile-sign-in">
+            <h4 class="support-heading">Support</h4>
+            <i class="material-icons close-mobile-sign-in">close</i>
+            <!--        <a data-sly-test="Sign In" href="https://www.godigit.com/login" class="sign-in-link">Sign In</a>-->
+            <div class="policy-menu-wrap policy-menu-wrap-dw">
+              <ul class="policy-menu">
+                <li class="policy-menu__list">
+                  <a href="https://www.godigit.com/login" target="_blank" class="policy-menu__link">
+                    <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/edit-policy.svg" alt="Renew Digit Policy"/>
+                    <span>Edit Policy</span>
+                  </a>
+                </li>
+                <li class="policy-menu__list">
+                  <a href="https://www.godigit.com/download-policy" target="_blank" class="policy-menu__link">
+                    <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/download-policy.svg" alt="Download Policy"/>
+                    <span>Download Policy</span>
+                  </a>
+                </li>
+                <li class="policy-menu__list">
+                  <a href="https://www.godigit.com/login?requests=true" target="_blank" class="policy-menu__link">
+                    <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/service-requests.svg"/>
+                    <span>My Service Requests</span>
+                  </a>
+                </li>
+      
+              </ul>
+            </div>
+            <div class="need-help-text-wrap">
+              <div class="need-help-text"></div>
+              
+                  <a href="tel:18001034448" target="_blank" class="contact-mail">
+                    <img src="https://www.godigit.com/content/dam/godigit/directportal/en/call.svg" alt="Helpline Number"/>
+                    1800 103 4448
+                  </a>
+                  <a href="https://api.whatsapp.com/send?l=en&text=Hi&phone=917026061234" target="_blank" class="contact-mail">
+                    <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/whatsapp.svg" alt="70260 61234"/>
+                    70260 61234
+                  </a>
+                  <a href="mailto:hello@godigit.com" target="_blank" class="contact-mail">
+                    <img src="https://www.godigit.com/content/dam/godigit/directportal/en/header-icons/mail.svg" alt="hello@godigit.com"/>
+                    hello@godigit.com
+                  </a>
+            </div>
+            <p style="margin:10px 20px;font-size:1.4rem;">  Our WhatsApp number cannot be used for calls. This is a chat only number. </p>
           </div>
-          <p style="margin:10px 20px;font-size:1.4rem;">  Our WhatsApp number cannot be used for calls. This is a chat only number. </p>
+        </div>
+      </header>
+       
+
+
+
+
+
+      <!--------------------------------------hero----------------------------------->
+
+
+
+
+
+      <div class="myhero">
+          <div class="myherowrap">
+              <div class="heroheading">
+                  <h2>Switch to Digit Insurance</h2>
+                  <p>Trusted by 2 crore Indians</p>
+              </div>
+              <div class="circledivs">
+                  <div class="circlediv">
+                      <div class="circleitem health">
+                      </div>
+                       <p style='color:orange'>Health</p>
+                  </div>
+                  <div class="circlediv">
+                      <div class="circleitem car">
+                       </div>
+                       <p>Car</p>
+                  </div>
+                  <div class="circlediv">
+                      <div class="circleitem bike">
+                       </div>
+                       <p>Bike</p>
+                  </div>
+                  <div class="circlediv">
+                      <div class="circleitem commercial">
+                       </div>
+                       <p>Commercial</p>
+                  </div>
+                  <div class="circlediv">
+                      <div class="circleitem travel">
+                       </div>
+                       <p>Travel</p>
+                  </div>
+                  <div class="circlediv">
+                      <div class="circleitem morepr">
+                       </div>
+                       <p>More Products</p>
+                  </div>
+              </div>
+              <div class="viewprice">
+                  <div class="row viewpricediv">
+                      <div class="col-md-3 col-xs-12 col-xs-12 viewpricecommon pin">
+                          <h4>Pin Code</h4>
+                          <input class='myinput' placeholder="Enter Pincode">
+                      </div>
+                      <div class="col-md-4 col-xs-12 viewpricecommon addmember">
+                          <h4>Add Members you want to insure</h4>
+                          <input class='myinput' placeholder="Add member">
+                      </div>
+                      <div class="col-md-3 col-xs-12 col-xs-12 viewpricecommon mobnumber">
+                          <h4>Mobile Number</h4>
+                          <input class='myinput' placeholder="Enter Mobile No.">
+                      </div>
+                      <div class="col-md-2 col-xs-12 viewpricecommon price">
+                          <button type="button" class="btn viewpricebutton">View Price</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="term">
+                  <div class="row">
+                      <div class="col-md-6 col-xs-12 termandcondition"  style='text-align: left;'>
+                          <button type="button" class="btn policybutton">PORT MY EXISTING POLICY
+                              <i style='color:orange' class="fa fa-chevron-right"></i></button>
+                      </div>
+                      <div class="col-md-6 col-xs-12">
+                          <div class='termandcondition' style='margin-top: 7px;'>
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <span>I agree to
+                                  <a>Terms & Conditions</a>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+
+
+
+
+
+      <!---------------------------------hidden hero------------------------------->
+
+
+
+
+
+      <div class="alternatehero">
+        <div class="alternateherowrap">
+          <div class="row">
+            <div class="col-sm-8 col-xs-12 alternateheroleft">
+              <h2>Virat Kohli has switched to Digit insurance!</h2>
+              <p>The choice of the Captain and 2 crore Indians. When will YOU switch?</p>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <img src='assets/images/vk_thumbup.jpeg'/>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-     
-   
- 
-
-    <!-----------------------------------------------------------site content----------------------------------->
-    <div class="myhero">
-        <div class="myherowrap">
-            <div class="heroheading">
-                <h2>Switch to Digit Insurance</h2>
-                <p>Trusted by 2 crore Indians</p>
-            </div>
-            <div class="circledivs">
-                <div class="circlediv">
-                    <div class="circleitem health">
-                     </div>
-                     <p>Health</p>
-                </div>
-                <div class="circlediv">
-                    <div class="circleitem health">
-                     </div>
-                     <p>Health</p>
-                </div>
-                <div class="circlediv">
-                    <div class="circleitem health">
-                     </div>
-                     <p>Health</p>
-                </div>
-                <div class="circlediv">
-                    <div class="circleitem health">
-                     </div>
-                     <p>Health</p>
-                </div>
-                <div class="circlediv">
-                    <div class="circleitem health">
-                     </div>
-                     <p>Health</p>
-                </div>
-                <div class="circlediv">
-                    <div class="circleitem health">
-                     </div>
-                     <p>Health</p>
-                </div>
-            </div>
-            <div class="viewprice">
-                <div class="row viewpricediv">
-                    <div class="col-xs-3 viewpricecommon pin">
-                        <h4>Pin Code</h4>
-                        <input class='myinput' placeholder="Enter Pincode">
-                    </div>
-                    <div class="col-xs-4 viewpricecommon addmember">
-                        <h4>Add Members you want to insure</h4>
-                        <input class='myinput' placeholder="Add member">
-                    </div>
-                    <div class="col-xs-3 viewpricecommon mobnumber">
-                        <h4>Mobile Number</h4>
-                        <input class='myinput' placeholder="Enter Mobile No.">
-                    </div>
-                    <div class="col-xs-2 viewpricecommon price">
-                        <button type="button" class="btn viewpricebutton">View Price</button>
-                    </div>
-                </div>
-            </div>
-            <div class="term">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <button type="button" class="btn policybutton">PORT MY EXISTING POLICY
-                            <i style='color:orange' class="fa fa-chevron-right"></i></button>
-                    </div>
-                    <div class="col-xs-6">
-                        <div style='text-align: right;'>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <span>I agree to
-                                <a>Terms & Conditions</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+  
+  
 
 
-    <!-------------------------------------protect section------------------------------------------>
 
-    <div class="myprotect">
-        <div class="myprotectwrap">
-            <h3 style='text-align: center;font-weight: 600;'>What would you like to protect today?</h3>
-            <div class='mainprotect'>
-                <div class='protectnaming'>MOTOR INSURANCE</div>
+      <!-------------------------------------protect section------------------------------------------>
+  
+
+
+
+      <div class="myprotect">
+          <div class="myprotectwrap">
+              <h3 style='text-align: center;font-weight: 600;'>What would you like to protect today?</h3>
+              <div class='mainprotect'>
+                  <div class='protectnaming'>MOTOR INSURANCE</div>
+              <div class="protectitems">
+                  <div class="protectitem">
+                      <img src='/assets/images/car-side-view.svg'/><br/>
+                      <h4>Car</h4>
+                  </div>
+                  <div class="protectitem">
+                      <img src='/assets/images/Autorikshaw.svg'/><br/>
+                      <h4>Car</h4>
+                  </div>
+                  <div class="protectitem">
+                      <img src='/assets/images/more-icon.svg'/><br/>
+                      <h4>Car</h4>
+                  </div>
+                  <div class="protectitem">
+                      <img src='/assets/images/travel-airplane.svg'/><br/>
+                      <h4>Car</h4>
+                  </div>
+                  <div class="protectitem">
+                      <img src='/assets/images/motorcycle-side-view.svg'/><br/>
+                      <h4>Car</h4>
+                  </div>
+                  <div class="protectitem">
+                      <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
+                      <h4>Car</h4>
+                  </div>
+              </div>
+              </div>
+  
+              <div class='mainprotect'>
+                <div class='protectnaming'>HEALTH INSURANCE</div>
             <div class="protectitems">
                 <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
+                    <img src='/assets/images/health.svg'/><br/>
+                    <h4>Health</h4>
+                </div>
+                <div class="protectitem">
+                    <img src='/assets/images/Autorikshaw.svg'/><br/>
                     <h4>Car</h4>
                 </div>
                 <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
+                    <img src='/assets/images/more-icon.svg'/><br/>
                     <h4>Car</h4>
                 </div>
                 <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
+                    <img src='/assets/images/travel-airplane.svg'/><br/>
                     <h4>Car</h4>
                 </div>
                 <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
+                    <img src='/assets/images/motorcycle-side-view.svg'/><br/>
                     <h4>Car</h4>
                 </div>
                 <div class="protectitem">
@@ -870,152 +835,454 @@
                 </div>
             </div>
             </div>
-
+  
             <div class='mainprotect'>
-                <div class='protectnaming'>MOTOR INSURANCE</div>
-            <div class="protectitems">
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-            </div>
-            </div>
+              <div class='protectnaming'>OTHER PRODUCTS</div>
+          <div class="protectitems">
+              <div class="protectitem">
+                  <img src='/assets/images/car-side-view.svg'/><br/>
+                  <h4>Car</h4>
+              </div>
+              <div class="protectitem">
+                  <img src='/assets/images/Autorikshaw.svg'/><br/>
+                  <h4>Car</h4>
+              </div>
+              <div class="protectitem">
+                  <img src='/assets/images/more-icon.svg'/><br/>
+                  <h4>Car</h4>
+              </div>
+              <div class="protectitem">
+                  <img src='/assets/images/travel-airplane.svg'/><br/>
+                  <h4>Car</h4>
+              </div>
+              <div class="protectitem">
+                  <img src='/assets/images/motorcycle-side-view.svg'/><br/>
+                  <h4>Car</h4>
+              </div>
+              <div class="protectitem">
+                  <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
+                  <h4>Car</h4>
+              </div>
+          </div>
+          </div>
+          </div>
+      </div>
+  
 
-            <div class='mainprotect'>
-                <div class='protectnaming'>MOTOR INSURANCE</div>
-            <div class="protectitems">
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-                <div class="protectitem">
-                    <img src='https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg'/><br/>
-                    <h4>Car</h4>
-                </div>
-            </div>
-            </div>
-            
-            
-        </div>
-        
-    </div>
 
-    <!----------------------------------------Why chose us---------------------------------------------------->
 
-    <div class="whychoseus">
-        <div class="whychoseuswrap">
-            <h3 style='text-align: center;font-weight: 600;'>Why choose us?</h3>
-            <div class="row choseuscomponents">
-                <div class="col-xs-4 choseuscomponent">
-                    <img src='assets/images/rocket.svg'/>
-                    <h3>Super-Simple Claims</h3>
-                    <p>Smartphone enabled self-inspection processes takes minutes!</p>
-                    <a href='#'>Read More</a>
-                </div>
-                <div class="col-xs-4 choseuscomponent">
-                    <img src='assets/images/vk-thumbsup-illus-01.svg'/>
-                    <h3>Super-Simple Claims</h3>
-                    <p>Smartphone enabled self-inspection processes takes minutes!</p>
-                    <a href='#'>Read More</a>
-                </div>
-                <div class="col-xs-4 choseuscomponent">
-                    <img src='assets/images/dddddd.svg'/>
-                    <h3>Super-Simple Claims</h3>
-                    <p>Smartphone enabled self-inspection processes takes minutes!</p>
-                    <a href='#'>Read More</a>
-                </div>
-                
-            </div>
-            <hr/>
-            <a style='color:orange;font-weight: 600;font-size: 20px;' href='#'><p style='padding: 35px 0;'>इस पेज को हिंदी भाषा में देखे</p></a>
-        </div>
-        
-    </div>
-    <hr/>
 
-    <!-----------------------------------------------secondary footer-------------------------------->
+      <!----------------------------------------Why chose us---------------------------------------------------->
+  
 
-    <div class="secondaryfooter">
-        <div class="secondaryfooterwrap">
-            <div class="row">
-                <div class="col-xs-6 left">
-                    <div class="row">
-                        <div class="col-xs-6 digit">
-                            <img class='logo' src='assets/images/logo.svg'/>
-                            <ul class='digitlinks'>
-                                <li>About</li>
-                                <li>Contact</li>
-                                <li>Career</li>
+
+
+
+      <div class="whychoseus">
+          <div class="whychoseuswrap">
+              <h3 style='text-align: center;font-weight: 600;'>Why choose us?</h3>
+              <div class="row choseuscomponents">
+                  <div class="col-md-4 col-xs-12 choseuscomponent">
+                      <img src='assets/images/rocket.svg'/>
+                      <h3>Super-Simple Claims</h3>
+                      <p>Smartphone enabled self-inspection processes takes minutes!</p>
+                      <a href='#'>Read More</a>
+                  </div>
+                  <div class="col-md-4 col-xs-12 choseuscomponent">
+                      <img src='assets/images/vk-thumbsup-illus-01.svg'/>
+                      <h3>Super-Simple Claims</h3>
+                      <p>Smartphone enabled self-inspection processes takes minutes!</p>
+                      <a href='#'>Read More</a>
+                  </div>
+                  <div class="col-md-4 col-xs-12 choseuscomponent">
+                      <img src='assets/images/dddddd.svg'/>
+                      <h3>Super-Simple Claims</h3>
+                      <p>Smartphone enabled self-inspection processes takes minutes!</p>
+                      <a href='#'>Read More</a>
+                  </div>
+                  
+              </div>
+              <hr/>
+              <a style='color:orange;font-weight: 600;font-size: 20px;' href='#'><p style='padding: 35px 0;'>इस पेज को हिंदी भाषा में देखे</p></a>
+          </div>
+          
+      </div>
+      <hr/>
+  
+
+
+
+      <!-----------------------------------------------secondary footer-------------------------------->
+  
+
+
+
+      <div class="secondaryfooter">
+          <div class="secondaryfooterwrap">
+              <div class="row">
+                  <div class="col-md-6 col-xs-12 left">
+                      <div class="row">
+                          <div class="col-md-6 col-xs-12 digit">
+                              <img class='logo' src='assets/images/logo.svg'/>
+                              <ul class='digitlinks'>
+                                  <li><a hre='#'>About</a></li>
+                                  <li><a hre='#'>Contact</a></li>
+                                  <li><a hre='#'>Career</a></li>
+                              </ul>
+                              <div class="secondaryfootericons">
+                                <div class="secondaryfootericon">
+                                  <i class="fa fa-facebook-f"></i>
+                                </div>
+                                <div class="secondaryfootericon">
+                                  <i class="fa fa-linkedin"></i>
+                                </div>
+                                <div class="secondaryfootericon">
+                                  <i class="fa fa-instagram"></i>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3 col-xs-12 col-xs-12 products">
+                              <h5>PRODUCTS</h5>
+                              <ul class='secondaryfooterul'>
+                                <li><a href='#'>Car Insurance</a></li>
+                                <li><a href='#'>Travel Insurance</a></li>
+                                <li><a href='#'>Property Insurance</a></li>
+                                <li><a href='#'>Group Health Insurance</a></li>
+                                <li><a href='#'>Commercial Vehicle Insurance</a></li>
+                                <li><a href='#'>Flight Delay</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-md-3 col-xs-12 col-xs-12 products">
+                            <p style='visibility: hidden;margin-bottom: 27px;'>.</p>
+                            <ul class='secondaryfooterul'>
+                              <li><a href="#">Car Insurance</a></li>
+                              <li><a href="#">Travel Insurance</a></li>
+                              <li><a href="#">Property Insurance</a></li>
+                              <li><a href="#">Group Health Insurance</a></li>
+                              <li><a href="#">Commercial Vehicle Insurance</a></li>
+                             
                             </ul>
-                            
-                        </div>
-                        <div class="col-xs-3">
-                            product
-                        </div>
-                        <div class="col-xs-3">
-                            side product
-                        </div>
-                    </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-xs-12 right">
+                      <div class="row">
+                          <div class="col-md-4 col-xs-12 resources">
+                            <h5>RESOURCES</h5>
+                            <ul class='secondaryfooterul'>
+                              <li><a href='#'>Blog</a></li>
+                              <li><a href='#'>Press</a></li>
+                              <li><a href='#'>Download Policy </a></li>
+                              <li><a href='#'>Group Health Insurance</a></li>
+                              <li><a href='#'>Commercial Vehicle Insurance</a></li>
+                              
+                            </ul>
+                          </div>
+                          <div class="col-md-4 col-xs-12">
+                              
+                              <h5>GENT & PARTNERSHIP</h5>
+                            <ul class='secondaryfooterul'>
+                              <li><a href='#'>Blog</a></li>
+                              <li><a href='#'>Press</a></li>
+                              <li><a href='#'>Download Policy </a></li>
+                              
+                            </ul>
+                          </div>
+                          <div class="col-md-4 col-xs-12">
+                             
+                              <h5> SERVICES</h5>
+                              <ul class='secondaryfooterul'>
+                                <li><a href='#'>Blog</a></li>
+                                <li><a href='#'>Press</a></li>
+                                <li><a href='#'>Download Policy </a></li>
+                                <li><a href='#'>Group Health Insurance</a></li>
+                                
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+
+
+
+
+      <!-----------------------------------get our app-------------->
+  
+
+
+
+
+      <div class="getourapp">
+        <div class="getourappwrap">
+          <div class="row apps">
+            <div class="col-md-3 col-xs-12 headingapp">
+              <h4>GET OUR APP</h4>
+            </div>
+            <div class="col-md-3 col-xs-12 col-xs-12 handpic">
+              <img src='https://www.godigit.com/content/dam/godigit/directportal/en/images/landing-page/hand-pointing-index-finger-right.svg'>
+            </div>
+            <div class="col-md-3 col-xs-12  appslogo">
+              <img src='assets/images/app-store.png'/>
+            </div>
+            <div class="col-md-3 col-xs-12  appslogo">
+              <img src='assets/images/google-play.png'/>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+
+
+
+      <!----------------------------------important links----------------------------->
+
+
+
+
+
+      <div class="accordionWrapper">
+        <div class="accordionItem accordionclose">
+              <div class="row accordionItemHeading">
+                <div class="col-md-3 col-xs-12">
+                  <p>Other Products</p>
                 </div>
-                <div class="col-xs-6 right">
-                    <div class="row">
-                        <div class="col-xs-4">
-                            RESOURCES
-                        </div>
-                        <div class="col-xs-4">
-                            GENT & PARTNERSHIP
-                        </div>
-                        <div class="col-xs-4">
-                            SERVICES
-                        </div>
-                    </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>Health Insurance Guides</p>
                 </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>Car Insurance Guides</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p style='display:inline-block;margin-right: 7px;'>Bike Insurance Guides</p>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="accordionItemContent">
+                <div class="row linklist">
+                  <div class="col-md-3 col-xs-12 otherproducts">
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                  </div>
+                  <div class="col-md-3 col-xs-12 healthinsuranceguid">
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>  
+                  </div>
+                  <div class="col-md-3 col-xs-12 carinsuranceguide">
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                  
+                  </div>
+                  <div class="col-md-3 col-xs-12 bikeinsuranceguide">
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="accordionItem accordionclose">
+              <div class="row accordionItemHeading">
+                <div class="col-md-3 col-xs-12">
+                  <p>Other Products</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>Health Insurance Guides</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>Car Insurance Guides</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p style='display:inline-block;margin-right: 7px;'>Bike Insurance Guides</p>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="accordionItemContent">
+                <div class="row linklist">
+                  <div class="col-md-3 col-xs-12 otherproducts">
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                  </div>
+                  <div class="col-md-3 col-xs-12 healthinsuranceguid">
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>  
+                  </div>
+                  <div class="col-md-3 col-xs-12 carinsuranceguide">
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                  
+                  </div>
+                  <div class="col-md-3 col-xs-12 bikeinsuranceguide">
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="accordionItem accordionclose">
+              <div class="row accordionItemHeading">
+                <div class="col-md-3 col-xs-12">
+                  <p>Other Products</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>Health Insurance Guides</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p>Car Insurance Guides</p>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <p style='display:inline-block;margin-right: 7px;'>Bike Insurance Guides</p>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="accordionItemContent">
+                <div class="row linklist">
+                  <div class="col-md-3 col-xs-12 otherproducts">
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                    <a>Other Products</a>
+                  </div>
+                  <div class="col-md-3 col-xs-12 healthinsuranceguid">
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>
+                    <a>Health Insurance Guides</a>  
+                  </div>
+                  <div class="col-md-3 col-xs-12 carinsuranceguide">
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                    <a>Car Insurance Guides</a>
+                  
+                  </div>
+                  <div class="col-md-3 col-xs-12 bikeinsuranceguide">
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+                    <a>Bike Insurance Guides</a>
+               
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-    </div>
+        <script src='/js/accordion.js' rel='script'></script>
+
+
+
+
+
+      <!----------------------------footer--------------------------->
+
+
+
+
+
+      <div class="footer">
+        <div class="footerwrap">
+          <ul class='footerlist'>
+            <li><a href='#'>Downloads</a></li>
+            <li><a href='#'>Do not diturb(DND)</a></li>
+            <li><a href='#'>Public Disclousures</a></li>
+            <li><a href='#'>Stewardship Policy</a></li>
+            <li><a href='#'>IRDAI</a></li>
+            <li><a href='#'>Privacy Policy</a></li>
+          </ul>
+          <p>CIN: U66010PN2016PLC167410, IRDAI Reg. No. 158.</p>
+          <p>Go Digit General Insurance Limited (formerly known as Oben General Insurance Ltd.) - 
+            Registered Office Address - 1 to 6 floors, Ananta One (AR One), Pride Hotel Lane, Narveer Tanaji Wadi,
+             City Survey No.1579, Shivaji Nagar, Pune-411005, Maharashtra | Corporate Office Address - Atlantis, 
+             95, 4th B Cross Road, 
+            Koramangala Industrial Layout, 5th Block, Bengaluru-560095, Karnataka</p>
+        </div>
+      </div>
     
+
+
     <!-- Bootstrap Latest compiled and minified JavaScript -->
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
+    <!------------------------------------------------local js------------------------------->
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
